@@ -9,6 +9,26 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #505050;
+}
+
 .body {
   background-color: black;
   color: white;
@@ -399,8 +419,8 @@ button:hover {
   gap: 64px;
   border-radius: 8px;
   overflow-y: scroll;
-  scrollbar-width: auto;
-  scrollbar-highlight-color: #5792ee;
+  scrollbar-width: thin;
+  scrollbar-color: #404040 #121212;
   flex: 1 1 auto;
   background: linear-gradient(#1f1f1f, #121212);
 }
@@ -434,7 +454,6 @@ button:hover {
 .radio-div {
   display: flex;
   overflow-x: scroll;
-  scrollbar-width: none;
   gap: 32px;
 }
 .pop-artists-img-div img {
